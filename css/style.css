@@ -1,0 +1,403 @@
+/* ---------------- Google fonts ------------------ */
+
+/* -------antonio------- */
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap');
+
+
+/* telegraf */
+@font-face {
+	font-family: 'telegraf';
+	src: url(../font/telegraf-bold.otf);
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'telegraf';
+	src: url(../font/telegraf-regular.otf);
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'telegraf';
+	src: url(../font/telegraf-light.otf);
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+/* ---------------- Basic css ------------------ */
+
+html {
+	font-size: 0.62vw;
+}
+
+:root {
+	scroll-behavior: unset;
+
+	/* colors */
+	--black-color: #000000;
+	--dark-black-color: #191919;
+	--blue-color: #004aad;
+	--white-color: #ffffff;
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+strong,
+i,
+ol,
+ul,
+li,
+form,
+label,
+footer,
+header,
+menu,
+nav,
+section {
+	margin: 0;
+	padding: 0;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	transition: 200ms;
+	color: inherit;
+}
+
+button:focus,
+a:focus,
+input:focus,
+textarea:focus {
+	outline: none;
+}
+
+/* body */
+body {
+	font-family: 'telegraf';
+	font-size: 1.6rem;
+	font-weight: 400;
+	background: var(--white-color);
+	color: var(--black-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+	font-family: "Antonio", sans-serif;
+}
+
+/* Heading */
+
+.title_xxl {
+	color: var(--dark-black-color);
+	font-size: 12.4rem;
+	font-weight: 700;
+	line-height: 1.1;
+}
+
+.title_xl {
+	color: var(--white-color);
+	font-size: 9rem;
+	font-weight: 700;
+	line-height: 1.3;
+}
+
+.title_lg {
+	color: var(--white-color);
+	font-size: 7.5rem;
+	font-weight: 700;
+	line-height: 1.3;
+}
+
+.title_md1 {
+	color: var(--black-color);
+	font-size: 6.3rem;
+	font-weight: 700;
+	line-height: 1.3;
+}
+
+.title_md {
+	color: var(--black-color);
+	font-size: 5.7rem;
+	font-weight: 700;
+	line-height: 1.3;
+}
+
+.title_sm {
+	font-family: "Antonio", sans-serif;
+	color: var(--white-color);
+	font-size: 4.2rem;
+	font-weight: 700;
+	line-height: 1.3;
+}
+
+.subtitle_lg {
+	color: var(--white-color);
+	font-size: 3rem;
+	font-weight: 400;
+	line-height: 1.3;
+}
+
+.subtitle_sm {
+	color: var(--white-color);
+	font-size: 1.8rem;
+	font-weight: 400;
+	line-height: 1.2;
+}
+
+/* button */
+.button {
+	color: var(--white-color);
+	background: var(--blue-color);
+	font-size: 2.5rem;
+	font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: 0.02rem;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 1rem 5rem;
+}
+
+
+/* ---------------- Hero Section  ------------------ */
+
+.hero_video video {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.hero_text h1 span {
+	color: var(--blue-color);
+}
+
+
+/* ---------------- About Section  ------------------ */
+
+.about_section {
+	background-image: url('../img/about-section-bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding: 10.5rem 0;
+}
+
+.about_title {
+	margin-bottom: 4.3rem;
+}
+
+.about_section .row {
+	--bs-gutter-x: 4rem;
+}
+
+.about_content_box {
+	min-height: 50rem;
+	height: 100%;
+	padding: 4.5rem 2rem 3.5rem;
+	border: 0.2rem solid var(--blue-color);
+	display: flex;
+	flex-direction: column;
+}
+
+.about_heading {
+	height: 11rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.about_text {
+	padding: 2rem 0rem;
+}
+
+.about_btn {
+	margin-top: auto;
+}
+
+.about_btn a:hover {
+	color: var(--blue-color);
+	background: var(--white-color);
+}
+
+
+/* ---------------- Brilliance Section  ------------------ */
+
+.brilliance_section {
+	position: relative;
+}
+
+.briliant_title {
+	width: 100%;
+	position: absolute;
+	top: 2rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.briliant_title h2 {
+	text-transform: uppercase;
+	letter-spacing: 0.15rem;
+}
+
+.brilliance_img {
+	width: 100%;
+	height: 100%;
+	border-right: 1px solid #FFF;
+}
+
+.brilliance_img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+/* ---------------- gallery_section  ------------------ */
+
+.gallery_section {
+	background-image: url('../img/gallery-section-bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding: 10rem 0;
+}
+
+.gallery_title {
+	margin-bottom: 5.5rem;
+}
+
+.gallery_img {
+	overflow: hidden;
+}
+
+.gallery_img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: 0.2s all ease;
+}
+
+.gallery_img:hover img {
+	transform: scale(1.05);
+}
+
+.gallery_text {
+	padding-top: 4rem;
+}
+
+.gallery_text h3 {
+	color: var(--white-color);
+	text-transform: uppercase;
+	margin-bottom: 2.4rem;
+}
+
+/* ---------------- Service Section  ------------------ */
+
+.service_section {
+	background-image: url('../img/service-section-bg.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: var(--blue-color);
+	padding: 8.5rem 0rem;
+	text-align: center;
+}
+
+.service_title {
+	margin-bottom: 7rem;
+}
+
+.service_title h2 {
+	color: var(--white-color);
+	letter-spacing: 0.1rem;
+}
+
+.service_section .row {
+	--bs-gutter-x: 4.5rem;
+	--bs-gutter-y: 6rem;
+}
+
+
+.service_text_box a {
+	font-family: 'telegraf';
+	font-size: 3.1rem;
+	font-weight: 700;
+	line-height: 1.2;
+	text-transform: uppercase;
+	color: var(--white-color);
+	border: 0.1rem solid var(--white-color);
+	display: block;
+	text-align: center;
+	padding: 4rem 1rem;
+	transition: 0.2s all ease;
+}
+
+.service_text_box a:hover {
+	background: var(--white-color);
+	color: var(--blue-color);
+}
+
+
+/* ---------------- Footer Section  ------------------ */
+
+.footer_section{
+	padding-bottom: 10rem;
+}
+
+.footer_img img {
+	width: 100%;
+}
+
+.footer_wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 7rem;
+}
+
+.footer_button {
+	display: flex;
+	align-items: center;
+	gap: 4rem;
+}
+
+.footer_button a {
+	color: var(--black-color);
+	letter-spacing: 0.1rem;
+	background: transparent;
+	border: 0.2rem solid var(--black-color);
+	padding: 1rem 6.5rem;
+	transition: 0.2s all ease;
+}
+
+.footer_button a:hover {
+	background: var(--black-color);
+	color: var(--white-color);
+}
