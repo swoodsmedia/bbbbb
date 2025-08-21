@@ -293,8 +293,18 @@ a {
 	margin-bottom: 5.5rem;
 }
 
+.gallery-scroll-container {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    padding-bottom: 2rem;
+}
+
 .gallery_img {
-	overflow: hidden;
+    flex-shrink: 0;
+    width: 33.3333%;
+    height: 30rem;
+    overflow: hidden;
 }
 
 .gallery_img img {
@@ -360,7 +370,9 @@ a {
 }
 
 .service_text_box a:hover {
-	background: var(--white-color);
+	background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('../download.jpeg');
+	background-size: cover;
+    background-position: center;
 	color: var(--blue-color);
 }
 
